@@ -23,7 +23,6 @@ add_files -fileset sim_1 -norecurse $vhdl_dir/tb_top.vhd
 add_files -fileset sim_1 -norecurse $vhdl_dir/hexfile_reader.vhd
 
 # Set all file types to VHDL-2008
-set_property file_type {VHDL 2008} [get_files  C:/Users/aleks/Documents/GitHub/pic16f84a_vhdl/vhdl/cpu_types.vhd]
 set_property file_type {VHDL 2008} [get_files $vhdl_dir/cpu_types.vhd ]
 set_property file_type {VHDL 2008} [get_files $vhdl_dir/ALU.vhd ]
 set_property file_type {VHDL 2008} [get_files $vhdl_dir/decoder.vhd ]
