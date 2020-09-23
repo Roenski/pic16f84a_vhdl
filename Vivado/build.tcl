@@ -22,10 +22,23 @@ set_property SOURCE_SET sources_1 [get_filesets sim_1]
 add_files -fileset sim_1 -norecurse $vhdl_dir/tb_top.vhd 
 add_files -fileset sim_1 -norecurse $vhdl_dir/hexfile_reader.vhd
 
+# Set all file types to VHDL-2008
+set_property file_type {VHDL 2008} [get_files  C:/Users/aleks/Documents/GitHub/pic16f84a_vhdl/vhdl/cpu_types.vhd]
+set_property file_type {VHDL 2008} [get_files $vhdl_dir/cpu_types.vhd ]
+set_property file_type {VHDL 2008} [get_files $vhdl_dir/ALU.vhd ]
+set_property file_type {VHDL 2008} [get_files $vhdl_dir/decoder.vhd ]
+set_property file_type {VHDL 2008} [get_files $vhdl_dir/RAM.vhd ]
+set_property file_type {VHDL 2008} [get_files $vhdl_dir/top.vhd ]
+set_property file_type {VHDL 2008} [get_files $vhdl_dir/tb_top.vhd ]
+set_property file_type {VHDL 2008} [get_files $vhdl_dir/hexfile_reader.vhd ]
+
 # Hex file that contains the code
 add_files -fileset sim_1 -norecurse $sim_dir/Led-blinker.hex
 
 # Wave view file
 add_files -fileset sim_1 -norecurse $sim_dir/tb_top_behav.wcfg
+
+# Set the simulation duration to 3000ns
+set_property -name {xsim.simulate.runtime} -value {3000ns} -objects [get_filesets sim_1]
 
 update_compile_order -fileset sources_1
