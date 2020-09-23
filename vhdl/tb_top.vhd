@@ -31,7 +31,7 @@ BEGIN
                  );
 
     run_test : PROCESS IS
-        CONSTANT ihex_data : STRING := "../simulations/Led-blinker.hex";
+        CONSTANT ihex_data : STRING := "Led-blinker.hex";
         VARIABLE memory : program_array := (OTHERS => (OTHERS => '0'));
     BEGIN
         read_ihex_file(ihex_data, memory);
