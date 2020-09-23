@@ -20,3 +20,7 @@ Inside simulations-folder, there is a file called `led_blinker_noloop.asm`. That
 Easiest way to run is to use Vivado. Navigate into Vivado-folder (located inside this repository), and run the build.tcl with Vivado. There is a batch-file for Windows, which works if the path is correct (probably not, so check it). Same goes for the source script (build.src), which can be used on Linux with the command `source build.src`. Once the Vivado-project opens, you can simply click "Run simulation".
 
 There is also a .do file (sim_top.do), which can be used with ModelSim with the command `vsim -do sim_top.do`.
+
+The end result should look something like this:
+
+![Example](example.png)
