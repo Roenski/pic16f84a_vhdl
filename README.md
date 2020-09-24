@@ -1,6 +1,6 @@
 # PIC16F84A microcontroller in VHDL
 ## Overview
-This project implements most of the functionalities of a PIC16F84A microcontroller in VHDL. Included is also the test bench, which shows all the functionality, as well as a tcl-file for generating a Vivado-project. The project contains only the code, i.e. it has not been synthesized or physically implemented on real hardware. 
+This project implements most of the functionalities of a PIC16F84A microcontroller in VHDL. Included is also the test bench, which shows all the functionality, as well as a tcl-file for generating a Vivado-project. The project contains only the code, i.e. no synthesization or physical implementation.
 ## Features 
 List of features implemented:
 * Decoder
