@@ -14,6 +14,7 @@ Some features **not** implemented include:
 * Timers
 * EEPROM
 * Program memory
+* Pipelining
 ## Demo
 Inside simulations-folder, there is a file called `led_blinker_noloop.asm`. That code contains some demo code, and comments about what different registers are supposed to do on different commands. There is also the corresponding hex-file called `Led-blinker.hex`, which is used by the testbench `tb_top.vhd`.
 ## How to run
